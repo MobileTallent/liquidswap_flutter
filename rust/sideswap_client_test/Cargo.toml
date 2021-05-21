@@ -1,0 +1,30 @@
+[package]
+name = "sideswap_client_test"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+bitcoin = { version = "0.25", features = [ "use-serde" ] }
+rand = "0.7.3"
+gdk-rust = { path = "../gdk_rust" }
+gdk-electrum = { path = "../gdk_rust/gdk_electrum" }
+gdk-common = { path = "../gdk_rust/gdk_common" }
+libc = "0.2"
+hex = "0.4.0"
+dirs = "1.0"
+chrono = "0.4.11"
+url = "1.7.2"
+ureq = { version = "1.0.0", features = ["json"] }
+sideswap_api = { version = "*", path = "../sideswap_api" }
+sideswap_common = { version = "*", path = "../sideswap_common" }
+sideswap_libwally = { version = "*", path = "../sideswap_libwally" }
+clap = { version = "*" }
+log = "*"
+serde_json = "1.0"
+reqwest = { version = "*", features = ["blocking", "json"] }
+anyhow = "*"
+serde = { version = "1.0", features = ["derive"] }
+config = "*"
+env_logger = "*"
+elements = { version = "0.13", features = ["serde-feature"] }
+tokio = { version = "0.2", features = ["full"] }

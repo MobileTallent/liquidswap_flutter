@@ -1,0 +1,2 @@
+analyzer:
+  exclude: [lib/side_swap_client_ffi.dart]

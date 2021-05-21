@@ -1,0 +1,17 @@
+[workspace]
+
+members = [
+    "sideswap_api",
+    "sideswap_common",
+    "sideswap_client",
+    "sideswap_dealer_example",
+    "gdk_rust",
+    "sideswap_libwally",
+    "sideswap_client_test",
+]
+
+#[profile.dev]
+#panic = "abort"
+
+#[profile.release]
+#panic = "abort"
